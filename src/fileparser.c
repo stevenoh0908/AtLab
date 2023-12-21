@@ -9,6 +9,7 @@
 #include <sys/stat.h>
 
 #ifndef _FILEINFOLIST_H_
+    #define _FILEINFOLIST_H_
     #include "fileinfolist.h"
 #endif
 
