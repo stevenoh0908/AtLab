@@ -41,11 +41,11 @@ int insertFileInfo(struct FileInfoList* list, char* filename) {
     node = malloc(sizeof(struct FileInfoNode));
     if (node == NULL) return -1;
 
-    node->filename = malloc(char*(strlen(fileinfo.filename)+1);
+    node->filename = malloc(sizeof(char)*(strlen(fileinfo.filename)+1);
     if (node->filename == NULL) return -1;
     strcpy(node->filename, fileinfo.filename);
 
-    node->dirname = malloc(char*(strlen(fileinfo.dirname)+1);
+    node->dirname = malloc(sizeof(char)*(strlen(fileinfo.dirname)+1);
     if (node->dirname == NULL) return -1;
     strcpy(node->dirname, fileinfo.dirname);
 
